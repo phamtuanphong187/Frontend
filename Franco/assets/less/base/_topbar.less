@@ -1,0 +1,361 @@
+section {
+
+	.topbar {
+		height: 46px;
+		background-color: #222222;
+
+		&__left {
+			height: 100%;
+
+			&__message {
+				margin-left: 14.5px;
+				font-size: 14.9px;
+				color: @text-color;
+				padding: 11px 10px 0 0;
+			}
+		}
+
+		&__right {
+
+			&__menu {
+				padding-right: 15px;
+			}
+		}
+	}
+
+	.menu {
+		text-align: right;
+
+		&__lvl {
+			display: inline-block;
+		    font-size: 14.9px;
+		    position: relative;
+		    padding-top: 11px;
+		}
+
+		&__lvl:hover > * {
+			color: #fff;
+		}
+
+		&__setting {
+			padding-right:26px;
+		}
+
+		&__link {
+			color: @text-color;
+		    text-decoration: none;
+		}
+
+		&__icon {
+			font-size:12px;
+		}
+	}
+
+	i {
+		padding-right: 5px;
+		font-size: 14px;
+		line-height: 46px;
+	}
+	
+	&__icon {
+		width: 100%;
+		height:100%;
+
+		&--icon2 {
+			margin-right:25px;
+
+			i {
+				padding-right: 15px;
+				font-size: 14px;
+				line-height: 46px;
+			}
+		}
+
+		&--icon1 {
+			margin-right:25px;
+		}
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+	section {
+
+		.topbar {
+
+			&__left {
+
+				&__message {
+					margin-left: 30px;
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 35px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+	section {
+
+		.topbar {
+
+			&__left {	
+
+				&__message {
+
+					i {
+						padding-right: 5px;
+					}
+					margin-left: 25px;
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 25px;
+				}
+			}
+		}
+
+		.menu {
+			text-align: right;
+
+			&__lvl {
+
+			    span {
+			    	display:none;
+			    }
+			}
+
+			&__setting {
+				padding-right: 15px;
+			}
+
+			&__icon {
+				font-size: 18px;
+			}
+		}
+
+		i {
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 46px;
+		}
+	}
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+	section {
+
+		.topbar {
+
+			&__left {
+
+				&__message {
+				padding: 13px 10px 0 0;
+			    margin-left: 50px;
+			    font-size: 13px;
+
+    				i {
+    					padding-right: 6px;
+    					font-size: 15px;
+    				}
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 50px;
+				}
+			}
+		}
+
+		.menu {
+			text-align: right;
+
+			&__lvl {
+
+			    span {
+			    	display:none;
+			    }
+			}
+
+			&__setting {
+				padding-right: 15px;
+			}
+
+			&__icon {
+				font-size: 15px;
+			}
+		}
+
+		i {
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 46px;
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+
+	section {
+
+		.topbar {
+
+			&__left {
+
+				&__message {
+				padding: 13px 10px 0 0;
+			    margin-left: 0;
+			    font-size: 12px;
+
+    				i {
+    					padding-right: 6px;
+    					font-size: 15px;
+    				}
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.menu {
+			text-align: right;
+
+			&__lvl { 
+
+			    span {
+			    	display:none;
+			    }
+			}
+
+			&__setting {
+				padding-right: 10px;
+			}
+
+			&__icon {
+				font-size: 15px;
+			}
+		}
+
+		i {
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 46px;
+		}
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+	section {
+
+		.topbar {
+
+			&__left {
+
+				&__message {
+					display: none;
+	    			
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.menu {
+			text-align: right;
+
+			&__lvl {
+
+			    span {
+			    	display:none;
+			    }
+			}
+
+			&__setting {
+				padding-right: 13px;
+			}
+
+			&__icon {
+				font-size: 15px;
+			}
+		}
+
+		i {
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 46px;
+		}
+	}
+}
+
+@media (min-width: 0px) and (max-width: 319px) {
+
+	section {
+
+		.topbar {
+
+			&__left {
+
+				&__message {
+					display: none;
+	    			
+				}
+			}
+
+			&__right {
+
+				&__menu {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.menu {
+			text-align: right;
+
+			&__lvl {
+
+			    span {
+			    	display:none;
+			    }
+			}
+
+			&__setting {
+				padding-right: 13px;
+			}
+
+			&__icon {
+				font-size: 14px;
+			}
+		}
+
+		i {
+			padding-right: 0px;
+			font-size: 14px;
+			line-height: 46px;
+		}
+	}
+}

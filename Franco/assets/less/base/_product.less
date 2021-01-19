@@ -1,0 +1,286 @@
+.short-title {
+	text-transform: uppercase;
+	color: @hover-color;
+	font-size: 12px;
+	letter-spacing: 6px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.big-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 2.4px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.product {
+	padding-top: 75px;
+
+	&__title {
+
+		&__text1 {
+			margin-bottom: 6px;
+			margin-left: -0.5px;
+			.transform(-0.5px, -1px);
+		}
+
+		&__text2 {
+			margin-left: -2.5px;
+		}
+
+		&__text2:before {
+			content: '';
+			position:absolute;
+			height: 56px;
+			width: 50px;
+			border-bottom: 1px solid black;
+			margin-left: 2.5px
+		}
+	}
+
+	&__content {
+		padding-top: 54.3px;
+
+		&__row2 {
+			margin-top: 29px;
+
+			.product-img {
+				position:relative;
+				transition:all 0.7s ease;
+			}
+		}
+
+		.product-img:hover {
+			transition:all 1s ease;
+
+		&__category {
+
+			.product-img {
+				position:relative;
+				transition:all 0.5s ease;
+			}
+
+			.rate {
+				font-size: 0;
+
+				li {
+					list-style: none;
+					display: inline-block;
+
+					.star {
+						font-size: 12.4px;
+						.transform(-2px, 10.5px);
+					}
+
+					.checked {
+					  color: #f8ba04;
+					}
+
+					.not-checked {
+						color: @number;
+					}
+				}
+			}
+		}
+
+		&--title {
+			margin-left: -0.5px;
+			padding-top: 15px;
+			color: #000;
+			font-weight: 700;
+			font-size: 13.5px;
+			font-family: 'Montserrat', sans-serif;
+			display: block;
+
+			.fa-star {
+				-webkit-transform: scale(1.5,1);
+				   -moz-transform: scale(1.5,1);
+				    -ms-transform: scale(1.5,1);
+				     -o-transform: scale(1.5,1);
+				        transform: scale(1.5,1);
+			}
+		}
+
+		&--title:hover {
+			color: @hover-color;
+			text-decoration: none;
+		}
+	}
+
+	button {
+    	left: 0;
+    	bottom: 0;
+		width: 118px;
+		height: 40px;
+		background-color: #fff;
+		position: absolute;
+		margin: 0 0 5px 5px;
+		.transition(0.3s);
+
+		a {
+			left: 0;
+	    	bottom: 0;
+			width: 118px;
+			height: 40px;
+			background-color: #fff;
+			position: absolute;
+			margin: 0 0 5px 5px;
+		}
+
+		span {
+			text-transform: uppercase;
+			font-size: 12px;
+			line-height: 24px;
+			color: #424242;
+			font-weight: 400;
+			font-family: 'Montserrat',sans-serif;
+		}
+	}
+
+	button:hover {
+		border:  @hover-color;
+
+		span {
+			color: @hover-color;
+		}
+	}
+
+	&__price {
+		margin-left: -2px;
+		.transform(0px, 1px);
+
+		&__old {
+			font-size:16px;
+			font-family: 'Open Sans', sans-serif;
+			text-decoration: line-through;
+			color: #999999;
+			font-weight: 400;
+			display: inline-block;
+		}
+
+		&__special {
+			font-size:16px;
+			font-family: 'Open Sans', sans-serif;
+			display: inline-block;
+			color: @hover-color;
+			font-weight: 700;
+		}
+	}
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+
+		.col-12 {
+			flex: 0 0 50%;
+			max-width: 50%;
+		} 
+	}
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+		
+		&__content {
+
+			&__img {
+
+				
+			}
+
+			&--title {
+				text-align: center;
+			}
+		}
+
+		ul {
+			text-align: center;
+		}
+		
+		&__price {
+			text-align: center;
+		}
+	}
+}
+
+@media (min-width: 270px) and (max-width: 319px) {
+
+	.product {
+
+		img {
+			width: 100%;
+		}
+
+		&__title {
+
+			&__text2:before {
+				content: '';
+				position:absolute;
+				height: 95px;
+				width: 50px;
+				border-bottom: 1px solid black;
+				margin-left: 2.5px
+			}
+		}
+
+		&__content {
+
+			&__img {
+
+				.rate {
+					text-align: center;
+				}
+			}
+
+			&--title {
+				text-align: center;
+			}
+		}
+
+		&__price {
+			text-align: center;
+		}
+	}
+}
