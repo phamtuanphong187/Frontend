@@ -23,7 +23,15 @@
 	   -moz-transform: translate(@x,@y);
 	    -ms-transform: translate(@x,@y);
 	     -o-transform: translate(@x,@y);
-	        transform: translate(@x,@y);
+			transform: translate(@x,@y);
+		    	
+}
+.transform--scale(@_x:1.5,@_y:1){
+	 -webkit-transform: scale(@_x,@_y);
+		-moz-transform: scale(@_x,@_y);
+		 -ms-transform: scale(@_x,@_y);
+		  -o-transform: scale(@_x,@_y);
+		     transform: scale(@_x,@_y);
 }
 
 .nth-child(@n) {
@@ -43,3 +51,19 @@
 	     -o-transition: all @x;
 	        transition: all @x;
 }
+.transition__top(@_x:0.7s){
+	-webkit-transition: top @_x;
+	   -moz-transition: top @_x;
+	    -ms-transition: top @_x;
+	     -o-transition: top @_x;
+	        transition: top @_x;
+
+}
+.transition--search(@_x:0.5s){
+	-webkit-transition: all @_x ease-in;
+	   -moz-transition: all @_x ease-in;
+		-ms-transition: all @_x ease-in;
+		 -o-transition: all @_x ease-in;
+		    transition: all @_x ease-in;
+}
+

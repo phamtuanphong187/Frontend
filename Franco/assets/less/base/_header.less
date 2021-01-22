@@ -1,4 +1,4 @@
-#overlay {
+.overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -6,11 +6,7 @@
     left: 0;
     display: none;
     background: #0000009c;
-	-webkit-transition: 0.4s;
-	   -moz-transition: 0.4s;
-	    -ms-transition: 0.4s;
-	     -o-transition: 0.4s;
-	        transition: 0.4s;
+	.transition(0.4s);
     z-index: 1;
 }
 
@@ -21,12 +17,7 @@
     top: 0;
     z-index: 99;
     background-color: #fff;
-    -webkit-transition: top 0.7s;
-	   -moz-transition: top 0.7s;
-	    -ms-transition: top 0.7s;
-	     -o-transition: top 0.7s;
-	        transition: top 0.7s;
-
+    .transition__top();
     &.sticky {
 	    position: fixed;
 	    .transition (0.5s);
@@ -109,12 +100,7 @@
 					position: absolute;
 					top: 30px;
 					right: 0;
-					-webkit-transition: all 0.5s ease-in;
-					   -moz-transition: all 0.5s ease-in;
-					    -ms-transition: all 0.5s ease-in;
-					     -o-transition: all 0.5s ease-in;
-					        transition: all 0.5s ease-in;
-					
+					.transition--search();			
 					&.hidden {
 						display: none;
 					}
